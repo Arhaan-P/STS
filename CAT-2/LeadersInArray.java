@@ -35,7 +35,10 @@ public class LeadersInArray {
             }
 
             for (int i = leaders.size() - 1; i >= 0; i--) {
-                System.out.print(leaders.get(i) + (i == 0 ? "" : " "));
+                if (i == 0)
+                    System.out.print(leaders.get(i));
+                else
+                    System.out.print(leaders.get(i) + " ");
             }
             System.out.println();
         }

@@ -10,8 +10,12 @@ public class BoothAlgorithmBinary {
     // helper: convert binary string to int array
     static int[] toBinaryArray(String binStr) {
         int[] arr = new int[binStr.length()];
-        for (int i = 0; i < binStr.length(); i++)
-            arr[i] = binStr.charAt(i) == '1' ? 1 : 0;
+        for (int i = 0; i < binStr.length(); i++) {
+            if (binStr.charAt(i) == '1')
+                arr[i] = 1;
+            else
+                arr[i] = 0;
+        }
         return arr;
     }
 
@@ -37,8 +41,12 @@ public class BoothAlgorithmBinary {
     static int[] binarySubtract(int[] a, int[] b) {
         int n = b.length;
         int[] bComp = new int[n];
-        for (int i = 0; i < n; i++)
-            bComp[i] = b[i] == 0 ? 1 : 0;
+        for (int i = 0; i < n; i++) {
+            if (b[i] == 0)
+                bComp[i] = 1;
+            else
+                bComp[i] = 0;
+        }
         int[] one = new int[n];
         one[n - 1] = 1;
         bComp = binaryAdd(bComp, one); // two's complement

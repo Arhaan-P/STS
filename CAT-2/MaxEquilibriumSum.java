@@ -32,7 +32,12 @@ public class MaxEquilibriumSum {
 
             for (int i = 0; i < n; i++) {
                 int prefix = prefixSum[i];
-                int suffix = prefixSum[n - 1] - (i > 0 ? prefixSum[i - 1] : 0);
+                int suffix;
+                if (i > 0)
+                    suffix = prefixSum[i - 1];
+                else
+                    suffix = 0;
+                suffix = prefixSum[n - 1] - suffix;
                 if (prefix == suffix)
                     maxPrefixSuffixSum = Math.max(maxPrefixSuffixSum, prefix);
             }

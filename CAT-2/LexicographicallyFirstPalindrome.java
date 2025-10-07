@@ -9,10 +9,15 @@ import java.util.Scanner;
 public class LexicographicallyFirstPalindrome {
     public static boolean canMakePalindrome(int[] freq, int len) {
         int odd = 0;
-        for (int f : freq)
+        for (int f : freq) {
             if ((f & 1) != 0)
                 odd++;
-        return (len % 2 == 0) ? odd == 0 : odd == 1;
+        }
+        if (len % 2 == 0) {
+            return odd == 0;
+        } else {
+            return odd == 1;
+        }
     }
 
     public static void main(String[] args) {

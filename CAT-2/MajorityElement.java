@@ -21,7 +21,10 @@ public class MajorityElement {
         for (int v : arr)
             if (v == ele)
                 c++;
-        return c > n / 2 ? ele : -1;
+        if (c > n / 2)
+            return ele;
+        else
+            return -1;
     }
 
     public static void main(String[] args) {
