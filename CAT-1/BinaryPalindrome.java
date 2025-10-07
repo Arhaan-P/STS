@@ -1,11 +1,11 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class BinaryPalindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        int n = (int)(Math.log(num) / Math.log(2)) + 1;
+        int n = (int) (Math.log(num) / Math.log(2)) + 1;
         boolean flag = true;
 
         int left = 0, right = n - 1;
@@ -23,5 +23,6 @@ public class BinaryPalindrome {
         if (flag) {
             System.out.println("yes");
         }
+        sc.close();
     }
 }
