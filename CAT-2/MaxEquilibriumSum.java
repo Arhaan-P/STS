@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  MaxEquilibriumSum.java
+ Time: O(n) Space: O(n)
  Reads a line of space-separated integers and finds the maximum "equilibrium" sum where
  prefix (from 0..i) equals suffix (i..n-1). The code computes prefix sums and checks
  positions where prefix == suffix and tracks the maximum such sum.

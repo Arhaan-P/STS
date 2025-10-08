@@ -1,5 +1,6 @@
 /*
  LongestSequenceOfOnes.java
+ Time: O(n) Space: O(1)
  Given a binary string, computes the maximum length of consecutive 1s obtainable
  by flipping at most one 0 to 1. The provided logic tracks previous and current runs.
 */

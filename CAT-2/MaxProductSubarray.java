@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  MaxProductSubarray.java
+ Time: O(n) Space: O(1)
  Computes maximum product subarray in O(n) by maintaining prefix and suffix products
  and handling zeros by resetting to 1 when encountered.
 */

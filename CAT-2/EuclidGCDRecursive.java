@@ -1,7 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
 
 /*
  EuclidGCDRecursive.java
+ Time: O(log(min(a,b))) Space: O(log(min(a,b)))
  Simple recursive implementation of Euclid's algorithm for GCD: gcd(a,b)=gcd(b,a%b).
 */
 public class EuclidGCDRecursive {

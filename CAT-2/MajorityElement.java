@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  MajorityElement.java
+ Time: O(n) Space: O(1)
  Implements Boyer-Moore Voting algorithm to find majority element (> n/2 occurrences)
  Two-phase: candidate selection and verification.
 */
@@ -23,8 +24,7 @@ public class MajorityElement {
                 c++;
         if (c > n / 2)
             return ele;
-        else
-            return -1;
+        return -1;
     }
 
     public static void main(String[] args) {

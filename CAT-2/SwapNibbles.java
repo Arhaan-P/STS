@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  SwapNibbles.java
+ Time: O(1) Space: O(1)
  Demonstrates swapping the two 4-bit nibbles in a byte value (0..255).
  Uses bit masking and shifts: lower nibble (x & 0x0F) and upper nibble (x & 0xF0).
 */

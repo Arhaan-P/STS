@@ -1,7 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
 
 /*
  BlockSwapRotation.java
+ Time: O(n) Space: O(1)
  Performs left rotation of an array by r positions using the Block Swap algorithm.
  The algorithm swaps blocks of elements recursively until rotation is complete. Runs in O(n).
 */

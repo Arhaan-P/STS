@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  MaxHourglassSum.java
+ Time: O(rows*cols) Space: O(1)
  Computes maximum hourglass sum in a matrix. An hourglass is shape:
  a b c
   1

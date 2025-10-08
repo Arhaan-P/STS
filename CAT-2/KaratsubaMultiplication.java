@@ -1,5 +1,6 @@
 /*
  KaratsubaMultiplication.java
+ Time: O(n^log2(3)) ~ O(n^1.585) Space: O(n)
  Implements the Karatsuba multiplication algorithm for large integers represented as long.
  Core idea: split each number into halves: x = a*10^m + b, y = c*10^m + d
  Then x*y = ac*10^(2m) + ((a+b)*(c+d) - ac - bd)*10^m + bd

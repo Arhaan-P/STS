@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  BoothAlgorithmBinary.java
+ Time: O(n*bits) Space: O(bits)
  Implements Booth's multiplication algorithm working with binary strings.
  This version expects two binary strings of equal length. It keeps ACC and Q
  and Q-1 and performs add/sub and arithmetic right shifts.

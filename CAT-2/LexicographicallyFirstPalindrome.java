@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /*
  LexicographicallyFirstPalindrome.java
+ Time: O(n + K) Space: O(K)
  Given a string, produce the lexicographically smallest palindrome that can be formed using
  all characters of the string (if possible). Approach: count frequencies, ensure at most one odd
  frequency (for odd length), build first half using smallest characters first.
